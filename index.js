@@ -18,7 +18,7 @@ const printChar = (currentLetterIndex, wordArray) => {
         .then( () => {
             const charCodificar = wordArray[currentLetterIndex];
             spanChar.innerHTML = alfabeto.includes(charCodificar) ? 
-                alfabeto[(alfabeto.indexOf(charCodificar) + parseInt(rango.value)) % alfabeto.length] : 
+                alfabeto[(alfabeto.indexOf(charCodificar) + parseInt(classificacao.value)) % alfabeto.length] : 
                 charCodificar
             printChar(currentLetterIndex + 1, wordArray);
         });
